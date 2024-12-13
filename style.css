@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(255, 194, 222);
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(28,15px);
+    grid-template-rows: repeat(6,56px);
+}
+.black{
+    background-color: rgb(0, 0, 0);
+    /*border: solid rgb(174, 24, 24);*/
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 5px 1px rgba(32, 32, 32, 0.2);
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    border-left: rgb(164, 164, 164) solid;
+    border-bottom: rgb(164, 164, 164) solid 8px;
+    box-shadow: 0 5px 1px rgba(32, 32, 32, 0.2);
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: white;
+
+}
+.active.white{
+    background-color: rgb(193, 113, 238);;
+    color: rgb(193, 113, 238);
+}
+.black.active{
+    transform: translateY(5px);
+}
+
+.C{
+    grid-area: 1/1/6/5;
+    border-top-left-radius: 12px;
+}
+.D{
+    grid-area:1/5/6/9;
+}
+.E{
+    grid-area: 1/9/6/13;
+}
+.F{
+    grid-area: 1/13/6/17;
+}
+.G{
+    grid-area: 1/17/6/21;
+}
+.A{
+    grid-area: 1/21/6/25;
+}
+.B{
+    grid-area: 1/25/6/29;
+    border-right: rgb(164, 164, 164) solid;
+    border-top-right-radius: 12px;
+
+}
+.Cs{
+    grid-area: 1/4/4/6;
+}
+.Ds{
+    grid-area: 1/8/4/10;
+}
+.Fs{
+    grid-area: 1/16/4/18;
+}
+.Gs{
+    grid-area: 1/20/4/22;
+}
+.As{
+    grid-area: 1/24/4/26;
+}
+.tip{
+    white-space: pre;
+    display: flex;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans", sans-serif;;
+    font-size: 1.2rem;
+    color: rgb(109, 109, 109)
+}
+h1{
+    font-family: "Poppins", serif;;
+    font-size: 5.3rem;
+    text-align: center;
+    color: rgb(193, 113, 238);
+}
